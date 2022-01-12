@@ -11,11 +11,11 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_RESOURCE_GROUP_NAME: "rg-ethicalbedbug"
-  AZURE_RESOURCE_GROUP_LOCATION: "westus2"
-  AZURE_MANAGED_IDENTITY_NAME: "msi-ethicalbedbug"
-  AZURE_SHARED_IMAGE_GALLERY_NAME: "sigethicalbedbug"
-  AZURE_SHARED_IMAGE_DEFINITION_NAME: "avd-ethicalbedbug"
+  AZURE_RESOURCE_GROUP_NAME: "rg-merrybison"
+  AZURE_RESOURCE_GROUP_LOCATION: "westeurope"
+  AZURE_MANAGED_IDENTITY_NAME: "msi-merrybison"
+  AZURE_SHARED_IMAGE_GALLERY_NAME: "sigmerrybison"
+  AZURE_SHARED_IMAGE_DEFINITION_NAME: "avd-merrybison"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
