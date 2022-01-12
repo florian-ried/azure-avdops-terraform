@@ -1,9 +1,9 @@
-Write-Output "Azure Image Builder was here!"
+# Write-Output "Azure Image Builder was here!"
 
 #########################################################################################
 # Create a temp working directory
 #########################################################################################
-# New-Item -Path 'C:\temp' -ItemType Directory -Force | Out-Null
+ New-Item -Path 'C:\temp' -ItemType Directory -Force | Out-Null
 
 # #########################################################################################
 # # Download, install, and configure FSLogix
@@ -72,11 +72,11 @@ Write-Output "Azure Image Builder was here!"
 #########################################################################################
 # Download and install VSCode
 #########################################################################################
-#Write-Host "Install VSCode"
-#Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?Linkid=852157' -OutFile 'c:\temp\VScode.exe'
-#Invoke-Expression -Command 'c:\temp\VScode.exe /verysilent'
-#Write-Host "Start 10 second sleep"
-#Start-Sleep -Seconds 10
+Write-Host "Install VSCode"
+Invoke-WebRequest -Uri 'https://go.microsoft.com/fwlink/?Linkid=852157' -OutFile 'c:\temp\VScode.exe'
+Invoke-Expression -Command 'c:\temp\VScode.exe /verysilent'
+Write-Host "Start 10 second sleep"
+Start-Sleep -Seconds 10
 
 # #########################################################################################
 # # Registry settings
