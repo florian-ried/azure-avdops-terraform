@@ -55,7 +55,7 @@ jobs:
           location: ${{ env.AZURE_RESOURCE_GROUP_LOCATION }}
           source-os-type: "Windows"
           source-image-type: "PlatformImage"
-          source-image: microsoftwindowsdesktop:office-365:20h2-evd-o365pp:latest
+          source-image: MicrosoftWindowsDesktop:Windows-10:win10-21h2-avd:latest
           dist-type: "SharedImageGallery"
           dist-resource-id: "/subscriptions/${{ secrets.ARM_SUBSCRIPTION_ID }}/resourceGroups/${{ env.AZURE_RESOURCE_GROUP_NAME }}/providers/Microsoft.Compute/galleries/${{ env.AZURE_SHARED_IMAGE_GALLERY_NAME }}/images/${{ env.AZURE_SHARED_IMAGE_DEFINITION_NAME }}"
           dist-location: "westeurope"
