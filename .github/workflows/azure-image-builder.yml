@@ -60,6 +60,6 @@ jobs:
           dist-resource-id: "/subscriptions/${{ secrets.ARM_SUBSCRIPTION_ID }}/resourceGroups/${{ env.AZURE_RESOURCE_GROUP_NAME }}/providers/Microsoft.Compute/galleries/${{ env.AZURE_SHARED_IMAGE_GALLERY_NAME }}/images/${{ env.AZURE_SHARED_IMAGE_DEFINITION_NAME }}"
           dist-location: "westeurope"
           customizer-script: |
-            & 'c:\workflow-artifacts\say-hello.ps1'
+            & 'c:\workflow-artifacts\base-installs.ps1'
           customizer-windows-update: true
           vm-size: "Standard_DS4_v2"
